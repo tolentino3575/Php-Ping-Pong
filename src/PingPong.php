@@ -6,12 +6,15 @@
             $count = 1;
             $number_list = array();
             while ($count <= $input_number){
-                if ($count % 3 == 0)
+                if ($count % 15 == 0)
                 {
-                    array_push($number_list, "ping");
+                    array_push($number_list, "pingpong");
                 } elseif ($count % 5 == 0)
                 {
                     array_push($number_list, "pong");
+                } elseif ($count % 3 ==0)
+                {
+                    array_push($number_list, "ping");
                 }
                 else
                 {

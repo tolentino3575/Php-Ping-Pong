@@ -42,6 +42,19 @@
             //assert
             $this->assertEquals(array(1, 2,"ping", 4, "pong"), $result);
         }
+
+        function test_PingPong_pingPong()
+        {
+            //arrange
+            $test_PingPong = new PingPong;
+            $input = (15);
+
+            //act
+            $result = $test_PingPong->runPingPong($input);
+
+            //assert
+            $this->assertEquals(array(1, 2, "ping", 4, "pong", "ping", 7, 8, "ping", "pong", 11, "ping", 13, 14, "pingpong"), $result);
+        }
     }
 
 ?>
